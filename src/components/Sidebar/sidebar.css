@@ -1,0 +1,244 @@
+.side_main_div {
+    background-color: rgb(249, 248, 248);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.side_header {
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41.02px;
+    letter-spacing: 0.02em;
+    text-align: center; 
+    color: black;
+    position: sticky;
+    top: 0; 
+    z-index: 100;
+    width: 100%;
+}
+
+.side_content {
+  
+    overflow-y: auto; 
+    height: calc(100vh - 43px); 
+    color: black;
+    text-align: center;
+}
+.side_addicon_div{
+    position: sticky;
+    background-color: #0047FF;
+    width: 83px;
+height: 83px;
+bottom: 21px;
+left: 272px;
+gap: 0px;
+z-index: 100;
+border-radius: 50%;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+cursor: pointer;
+}
+.side_content_text_div{
+   text-align: center;
+   width: 100%;
+
+opacity: 0px;
+
+}
+.side_content_text{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 28.13px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.side_content_img_div{
+    width: 68.9px;
+height: 55.9px;
+border-radius: 50%;
+gap: 0px;
+opacity: 0px;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+.ab{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 23.45px;
+letter-spacing: 0.02em;
+text-align: left;
+color: white;
+}
+.side_content_main_div {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    padding-left: 21%;
+   
+}
+.color-circle.active{
+    border: 2px solid black;
+}
+
+.side_content_main_di {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    padding-left: 2%;
+    background-color: #215df5;
+    color: white;
+    position: absolute; /* Change position to absolute */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    z-index: 1; /* Increase z-index if necessary */
+}
+
+.side_content_main_div:hover{
+    background-color:  #2F2F2F2B;
+    
+    cursor: pointer;
+}
+.modal {
+    position: fixed; /* Ensure the modal stays fixed within the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Ensure the modal appears above other content */
+    color: black;
+    padding: 10px;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .clos {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: large;
+    font-family: poppins;
+    width: 20px;
+    background-color: red;
+    height: 20px;
+    border: 1px solid red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+  }
+  .cr_nw_grp_txt{
+    font-family: Roboto;
+font-size: 29px;
+font-weight: 500;
+line-height: 46.45px;
+letter-spacing: 0.035em;
+text-align: left;
+
+  }
+  .ad_grp_inp{
+    width: 100%;
+height: 51px;
+top: 439px;
+left: 641px;
+gap: 0px;
+border-radius: 22px ;
+border: 2px solid black;
+
+
+  }
+  .color-picker {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+  }
+.crt_grp{
+    width: 154px;
+height: 38px;
+top: 607px;
+left: 945px;
+gap: 0px;
+border-radius: 11px ;
+border: none;
+background-color: #0047FF;
+color: white;
+cursor: pointer;
+font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 32.04px;
+letter-spacing: 0.035em;
+text-align: left;
+
+}  
+@media screen and (max-width:768px) {
+    .cr_nw_grp_txt{
+        font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 46.45px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    
+      }
+      .color-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: pointer;
+      }
+      .ad_grp_inp{
+        width: 100%;
+    height: 31px;
+    top: 439px;
+    left: 641px;
+    gap: 5px;
+    border-radius: 22px ;
+    border: 2px solid black;
+    
+    
+      }
+}
